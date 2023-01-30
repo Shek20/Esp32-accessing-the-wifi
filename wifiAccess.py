@@ -28,7 +28,7 @@ def connectionMethod():
     gate.active(True)
     if not gate.isconnected():
         print("Connecting...")
-        gate.connect("KINGAKATI [2Ghz]","mandombe26")
+        gate.connect("SSID","password")
         while not gate.isconnected():
             pass
         address = str(gate.ifconfig()[0])
